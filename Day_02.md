@@ -220,3 +220,19 @@ In summary, the `==` operator checks if the values are equal after performing ty
 It is generally recommended to use the `===` operator for strict equality checks, as it helps avoid unexpected behavior that can occur with the `==` operator.
 
 
+```js
+let variable1 = null;
+let variable2 = "";
+
+console.log(variable1); // Output: null
+if (true) {
+  console.log(variable2); // Output: ""
+} else {
+  
+}
+console.log(variable1 === variable2); // Output: false
+console.log(variable1 == variable2); // Output: false
+console.log(variable1 === null); // Output: true
+console.log(variable2 === ""); // Output: true
+```
+
